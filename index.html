@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+	<title>Mixér barev</title>
+
+  <script type="module" src="index.js"></script>
+</head>
+<body>
+	<div class="color-panel">
+		<h1>Mixér barev</h1>
+		<div class="sliders">
+			<label for="red">Červená</label>
+			<input
+        type="range"
+        class="slider slider--red"
+        id="redSlider"
+        min="0"
+        max="255"
+        value="0"
+      />
+
+			<label for="green">Zelená</label>
+			<input
+        type="range"
+        class="slider slider--green"
+        id="greenSlider"
+        min="0"
+        max="255"
+        value="0"
+      />
+
+			<label for="blue">Modrá</label>
+			<input
+        type="range"
+        class="slider slider--blue"
+        id="blueSlider"
+        min="0"
+        max="255"
+        value="0"
+      />
+		</div>
+		<div class="color-box" id="color-box"></div>
+	</div>
+</body>
+</html>
