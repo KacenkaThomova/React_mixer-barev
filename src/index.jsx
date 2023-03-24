@@ -7,7 +7,7 @@ const App = () => {
   const [redValue, setRedValue] = useState ()
   const [greenValue, setGreenValue] = useState ()
   const [blueValue, setBlueValue] = useState ()
-
+  const color = `rgb(${redValue}, ${greenValue}, ${blueValue})`
 
   return (
     <div className="container">
@@ -17,7 +17,7 @@ const App = () => {
     <ColorSlider baseColor='red' colorName='Cervena' onValueChange={setRedValue} />
     <ColorSlider baseColor='green' colorName='Zelena' onValueChange={setGreenValue}/>
     <ColorSlider baseColor='blue' colorName='Modra' onValueChange={setBlueValue}/>
-    <div className="color-box" id="color-box"></div>
+    <div className="color-box" style={{backgroundColor: {color} }} id="color-box"></div>
 	</div>
       </main>
       <footer>
